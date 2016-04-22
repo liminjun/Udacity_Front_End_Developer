@@ -17,3 +17,5 @@ http://hex.colorrrs.com/
 RGB
 
 Hexadecimal
+
+Microsoft Visual Code Keyboard shortcuts
