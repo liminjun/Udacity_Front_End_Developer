@@ -1,0 +1,14 @@
+body{
+    font-family: 'Lato', sans-serif;
+}
+@media screen and (max-width:320px){
+    
+}
+.featured-work-title{
+    color:#bcbbbb;
+}
+.hr-line{
+    height: 2px;
+    background-color: #bcbbbb;
+    margin: 30px 0;
+}
