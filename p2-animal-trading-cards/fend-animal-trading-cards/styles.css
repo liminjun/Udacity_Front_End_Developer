@@ -1,0 +1,49 @@
+/* add your CSS here */
+/*reset css*/
+html,body,ul,li{
+    margin: 0;
+    padding: 0;
+}
+body{
+    color: #000;
+    font-family: Open Sans,Helvetica,sans-serif;
+}
+.page-title{
+    font-weight: bold;
+    font-size: 30px;
+}
+#main-container{
+    width: 486px;
+    margin: 20px auto;
+    border: 2px solid #e6e5e2;
+    border-radius: 2px;
+    box-shadow: 1px 5px 8px 2px #e6e5e2;
+    padding: 16px;
+}
+#main-container img{
+    width:300px;
+    text-align: center;
+}
+
+#animal-info{
+    margin-top: 16px;
+    border: 2px solid #e6e5e2;
+    padding: 18px;
+}
+#animal-info li{
+    list-style-type: none;
+}
+#animal-info .info-item{
+    font-style: italic;
+}
+#animal-info .info-title{
+    font-weight: bold;
+    font-size: 18px;
+    font-style: normal;
+}
+#animal-info .info-summary{
+    font-style: italic;
+}
+#animal-info .info-text{
+    font-size: 16px;
+}
