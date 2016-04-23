@@ -1,8 +1,14 @@
 body{
     font-family: 'Lato', sans-serif;
+    margin-top: 20px;
 }
-@media screen and (max-width:320px){
-    
+@media screen and (min-width:400px) and (max-width:992px){
+    .col-md-4 img{
+        margin: 0 auto;
+    }
+    .featured-work-title{
+        text-align: center;
+    }
 }
 .featured-work-title{
     color:#bcbbbb;
