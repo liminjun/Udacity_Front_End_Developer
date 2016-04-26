@@ -3,15 +3,14 @@ var bio = {
     "role": "Web Front-End Developer",
     "contacts": {
         "mobile": "18896724808",
-        "email": "admin@udacity.com",
+        "email": "v-leeli@hotmail.com",
         "github": "liminjun",
         "twitter": "liminjun",
-        "blog":"http://www.cnblogs.com/liminjun88",
-        "location": "San Francisco"
+        "location": "Suzhou"
     },
     "welcomeMessage": "Welcome to Udacity",
-    "skills": ["html", "css", "javascript"],
-    "bioPic": "images/fry.jpg",
+    "skills": ["html", "css", "javascript","jQuery","AngularJS"],
+    "bioPic": "images/my.jpg",
     "display": function () {
         var headerName = HTMLheaderName.replace("%data%", bio.name);
         var headerRole = HTMLheaderRole.replace("%data%", bio.role);
@@ -20,17 +19,17 @@ var bio = {
         var email = HTMLemail.replace("%data%", bio.contacts.email);
         var twitter = HTMLtwitter.replace("%data%", bio.contacts.twitter);
         var github = HTMLgithub.replace("%data%", bio.contacts.github);
-        var blog = HTMLblog.replace("%data%", bio.contacts.blog);
+
         var location = HTMLlocation.replace("%data%", bio.contacts.location);
-        
+
         $("#header").prepend(headerRole);
         $("#header").prepend(headerName);
-        
 
-        $("#topContacts").append(mobile).append(email).append(twitter).append(github).append(blog).append(location);
-        
-        $("#footerContacts").append(mobile).append(email).append(twitter).append(github).append(blog).append(location);
-        
+
+        $("#topContacts").append(mobile).append(email).append(twitter).append(github).append(location);
+
+        $("#footerContacts").append(mobile).append(email).append(twitter).append(github).append(location);
+
         var bioPic = HTMLbioPic.replace("%data%", bio.bioPic);
         var welcomeMsg = HTMLWelcomeMsg.replace("%data%", bio.welcomeMessage);
 
@@ -52,14 +51,14 @@ var work = {
         employer: "China Mobile",
         title: "Web Developer",
         location: "Suzhou",
-        date: "2015.10-Current",
+        dates: "2015.10-In Progress",
         description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque voluptatem iste omnis blanditiis quidem, quo animi placeat consectetur! Ea nulla dolorem vero possimus, rem neque. Cumque esse, molestiae nihil numquam!"
     },
         {
             employer: "Adchina",
             title: "Web Developer",
             location: "Shanghai",
-            date: "2013.4-2015.10",
+            dates: "2013.4-2015.10",
             description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque voluptatem iste omnis blanditiis quidem, quo animi placeat consectetur! Ea nulla dolorem vero possimus, rem neque. Cumque esse, molestiae nihil numquam!"
         }],
     display: function () {
@@ -68,8 +67,8 @@ var work = {
             var workObj = work.jobs[i];
             var employer = HTMLworkEmployer.replace("%data%", workObj.employer);
             var title = HTMLworkTitle.replace("%data%", workObj.title);
-            var location = HTMLworkDates.replace("%data%", workObj.location);
-            var dateHTML = HTMLworkLocation.replace("%data%", workObj.date);
+            var location =HTMLworkLocation.replace("%data%", workObj.location);
+            var dateHTML = HTMLworkDates.replace("%data%", workObj.dates);
             var description = HTMLworkDescription.replace("%data%", workObj.description);
             $(".work-entry").append(employer).append(title).append(location)
                 .append(dateHTML).append(description);
@@ -144,12 +143,12 @@ var projects = {
         title: "Project A",
         dates: "2016-4-25",
         description: "A web project using html and css",
-        image: "images/197x148.gif"
+        images: ["images/197x148.gif", "images/197x148.gif"]
     }, {
             title: "Project B",
             dates: "2016-4-25",
             description: "A web project using html and css",
-            image: "images/197x148.gif"
+            images: ["images/197x148.gif", "images/197x148.gif"]
         }],
     display: function () {
         $("#projects").append(HTMLprojectStart);
@@ -161,10 +160,21 @@ var projects = {
             var projectTitle = HTMLprojectTitle.replace("%data%", projectObj.title);
             var projectDates = HTMLprojectDates.replace("%data%", projectObj.dates);
             var projectDescription = HTMLprojectDescription.replace("%data%", projectObj.description);
-            var projectImage = HTMLprojectImage.replace("%data%", projectObj.image);
-            $(".project-entry").append(projectTitle).append(projectDates).append(projectDescription).append(projectImage);
+
+            $(".project-entry").append(projectTitle).append(projectDates).append(projectDescription);
+
+            for (var j = 0; j < projectObj.images.length; j++) {
+                var projectImageObj = projectObj.images[j];
+                var projectImage = HTMLprojectImage.replace("%data%", projectImageObj);
+
+                $(".project-entry").append(projectImage)
+            }
+
+
         }
     }
 };
 
 projects.display();
+
+$("#mapDiv").append(googleMap);

@@ -82,7 +82,7 @@ a {
 .welcome-message {
   font-style: italic;
   font-size: 18px;
-  color: #F3F3F3;
+  color: #02b3e4;;
   line-height: 28px;
 }
 
@@ -90,7 +90,11 @@ a {
   color: #F5AE23;
   display: none;
 }
-
+#skills .flex-item{
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
 .orange {
   background-color: #F5AE23;
 }
@@ -144,6 +148,7 @@ ul {
   padding: 10px;
   width: 200px;
   display: none;
+  border-radius: 50%;
 }
 
 img {
@@ -202,7 +207,7 @@ span {
 }
 
 #mapDiv {
-  height: 400px;
+  height: 600px;
   width: 100%;
   padding-bottom: 5%;
 }
@@ -212,4 +217,13 @@ span {
   .biopic {
     display: block;
   }
+}
+/*Custom Style*/
+
+#map {
+        height: 100%;
+      }
+.location-text{
+  font-size: 16px;
+  color: #f5ae23;
 }
