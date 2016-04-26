@@ -9,9 +9,9 @@ var bio = {
         "location": "Suzhou"
     },
     "welcomeMessage": "Welcome to Udacity",
-    "skills": ["html", "css", "javascript","jQuery","AngularJS"],
+    "skills": ["html", "css", "javascript", "jQuery", "AngularJS"],
     "bioPic": "images/my.jpg",
-    "display": function () {
+    "display": function() {
         var headerName = HTMLheaderName.replace("%data%", bio.name);
         var headerRole = HTMLheaderRole.replace("%data%", bio.role);
 
@@ -42,7 +42,7 @@ var bio = {
         }
 
     }
-}
+};
 
 bio.display();
 
@@ -53,21 +53,20 @@ var work = {
         location: "Suzhou",
         dates: "2015.10-In Progress",
         description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque voluptatem iste omnis blanditiis quidem, quo animi placeat consectetur! Ea nulla dolorem vero possimus, rem neque. Cumque esse, molestiae nihil numquam!"
-    },
-        {
-            employer: "Adchina",
-            title: "Web Developer",
-            location: "Shanghai",
-            dates: "2013.4-2015.10",
-            description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque voluptatem iste omnis blanditiis quidem, quo animi placeat consectetur! Ea nulla dolorem vero possimus, rem neque. Cumque esse, molestiae nihil numquam!"
-        }],
-    display: function () {
+    }, {
+        employer: "Adchina",
+        title: "Web Developer",
+        location: "Shanghai",
+        dates: "2013.4-2015.10",
+        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque voluptatem iste omnis blanditiis quidem, quo animi placeat consectetur! Ea nulla dolorem vero possimus, rem neque. Cumque esse, molestiae nihil numquam!"
+    }],
+    display: function() {
         $("#workExperience").append(HTMLworkStart);
         for (var i = 0; i < work.jobs.length; i++) {
             var workObj = work.jobs[i];
             var employer = HTMLworkEmployer.replace("%data%", workObj.employer);
             var title = HTMLworkTitle.replace("%data%", workObj.title);
-            var location =HTMLworkLocation.replace("%data%", workObj.location);
+            var location = HTMLworkLocation.replace("%data%", workObj.location);
             var dateHTML = HTMLworkDates.replace("%data%", workObj.dates);
             var description = HTMLworkDescription.replace("%data%", workObj.description);
             $(".work-entry").append(employer).append(title).append(location)
@@ -87,15 +86,13 @@ var education = {
         url: "www.ncu.cn",
         majors: ["Software Engineering", "Softwar Testing"]
     }],
-    onlineCourses: [
-        {
-            title: "Front-End Nanodegree",
-            school: "Udacity",
-            date: "2016.4.-2016.6",
-            url: "https://cn.udacity.com/course/front-end-web-developer-nanodegree--nd001/"
-        }
-    ],
-    display: function () {
+    onlineCourses: [{
+        title: "Front-End Nanodegree",
+        school: "Udacity",
+        date: "2016.4.-2016.6",
+        url: "https://cn.udacity.com/course/front-end-web-developer-nanodegree--nd001/"
+    }],
+    display: function() {
         $("#education").append(HTMLschoolStart);
 
         for (var i = 0; i < education.schools.length; i++) {
@@ -134,10 +131,6 @@ var education = {
 };
 education.display();
 
-
-
-
-
 var projects = {
     projects: [{
         title: "Project A",
@@ -145,12 +138,12 @@ var projects = {
         description: "A web project using html and css",
         images: ["images/197x148.gif", "images/197x148.gif"]
     }, {
-            title: "Project B",
-            dates: "2016-4-25",
-            description: "A web project using html and css",
-            images: ["images/197x148.gif", "images/197x148.gif"]
-        }],
-    display: function () {
+        title: "Project B",
+        dates: "2016-4-25",
+        description: "A web project using html and css",
+        images: ["images/197x148.gif", "images/197x148.gif"]
+    }],
+    display: function() {
         $("#projects").append(HTMLprojectStart);
 
         for (var i = 0; i < projects.projects.length; i++) {
@@ -167,10 +160,8 @@ var projects = {
                 var projectImageObj = projectObj.images[j];
                 var projectImage = HTMLprojectImage.replace("%data%", projectImageObj);
 
-                $(".project-entry").append(projectImage)
+                $(".project-entry").append(projectImage);
             }
-
-
         }
     }
 };
