@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+   <script type="text/javascript">
+   var amy={loc:1};
+   move(amy);
+   
+   var ben={loc:9};
+   move(ben);
+   
+   var carlike=function(obj,loc){
+       obj.loc=loc;
+       obj.move=function(){
+           this.loc++;
+       }
+       return obj;
+   }
+   
+   //==========================
+   var makeAnObject=function(){
+       return {example:'property'};
+   };
+   
+   var obj1=makeAnObject();
+   var obj2=makeAnObject();
+   
+   console.log(obj1===obj2);
+   
+   </script>
+</body>
+</html>

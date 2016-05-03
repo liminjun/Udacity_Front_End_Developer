@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var gold={a:1};
+        console.log(gold.a);
+        console.log(gold.z);
+        
+        var blue=extend({},gold);
+        blue.b=2;
+        console.log(blue.a);
+        console.log(blue.b);
+        console.log(blue.z);
+        
+        var rose=Object.create(gold);
+        rose.b=2;
+        console.log(rose.a);
+        console.log(rose.b);
+        console.log(rose.z);
+        
+        gold.z=3;
+        console.log(blue.z);
+        console.log(rose.z);
+        console.log(rose.toString());
+        
+    </script>
+    
+</body>
+</html>

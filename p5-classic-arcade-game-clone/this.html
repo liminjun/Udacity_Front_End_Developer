@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var obj={
+            fn:function(a,b){ 
+                console.log(this); 
+            } 
+        }
+        
+        var ob2={method:obj.fn};
+        
+        obj.fn(3,4);
+    </div>
+    
+</body>
+</html>
