@@ -27,84 +27,51 @@
 
         </div>
     </nav>
-    <div class="row">
-        <form class="form-inline">
-            <div class="form-group col-sm-10">
-                <input type="text" placeholder="Email" class="form-control">
-            </div>
 
-            <button type="submit" class="btn btn-success">Search</button>
-        </form>
-    </div>
     <div class="jumbotron">
         <div class="container">
             <div class="row">
-                <h3>Google Maps</h3
+                <div class="col-sm-3">
+                    <h3>Search Places</h3>
+                    <form class="form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Email" class="form-control">
+
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-success">Search</button>
+                        </div>
+
+                    </form>
+                    <div class="place-list">
+                        <ol>
+                            <li></li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="col-sm-9">
+
+                </div>
+            </div>
+            <div class="row">
+                <h3>Google Maps</h3>
+                <div id="map-container"></div>
             </div>
 
-            <div id="map-container"></div>
+
         </div>
     </div>
 
+    <footer>
+        <p>&copy; Lee 2016</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="
+        crossorigin="anonymous"></script>
+    <script type='text/javascript' src='libs/knockout-3.4.0.js'></script>
 
-    <div class="container">
-        <!-- Example row of columns -->
-        <div class="row">
-            <div class="col-md-4">
-                <h2>Heading</h2>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris
-                    condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod.
-                    Donec sed odio dui. </p>
-                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-            </div>
-            <div class="col-md-4">
-                <h2>Heading</h2>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris
-                    condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod.
-                    Donec sed odio dui. </p>
-                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-            </div>
-            <div class="col-md-4">
-                <h2>Heading</h2>
-                <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta
-                    felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum
-                    massa justo sit amet risus.</p>
-                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-            </div>
-        </div>
-        <br/>
-        <hr>
-        <div class="row">
-            <div class="col-md-4">
-                <h2>Heading</h2>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris
-                    condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod.
-                    Donec sed odio dui. </p>
-                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-            </div>
-            <div class="col-md-4">
-                <h2>Heading</h2>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris
-                    condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod.
-                    Donec sed odio dui. </p>
-                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-            </div>
-            <div class="col-md-4">
-                <h2>Heading</h2>
-                <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta
-                    felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum
-                    massa justo sit amet risus.</p>
-                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-            </div>
-        </div>
-        <hr>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrOlxayGJC3bvNg2awJDxtNHfk3NlwuM8&signed_in=true&callback=initMap"></script>
 
-        <footer>
-            <p>&copy; Lee 2016</p>
-        </footer>
-        <script type='text/javascript' src='libs/knockout-3.4.0.js'></script>
-        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrOlxayGJC3bvNg2awJDxtNHfk3NlwuM8&signed_in=true&callback=initMap"></script>
-        <script src="js/main.js" type="text/javascript"></script>
+    <script src="js/main.js" type="text/javascript"></script>
 </body>
 
 </html>

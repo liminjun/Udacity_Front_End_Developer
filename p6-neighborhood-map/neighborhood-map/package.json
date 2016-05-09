@@ -1,0 +1,16 @@
+{
+  "name": "neighborhood-map",
+  "version": "0.0.1",
+  "description": "neighborhood map",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.0",
+
+
+    "gulp-connect": "^2.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
