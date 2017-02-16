@@ -23,6 +23,7 @@ $(function () {
          */
         it('are defined', function () {
             expect(allFeeds).toBeDefined();
+
             expect(allFeeds.length).not.toBe(0);
         });
 
@@ -30,10 +31,11 @@ $(function () {
 
         function testEachFeedInallFeeds(feed) {
             it('each feed has a URL defined and that the URL is not empty', function () {
-                var regularExpressionUrl = /^(?:([A-Za-z]+):)?(\/{0,3})([0-9.-A-Za-z]+)(?::(\d+))?(?:\/([^?#]))?(?:\?([^#]))?(?:#(.*))?$/;
 
-                expect(feed.url).toMatch(regularExpressionUrl);
-                expect(feed.url).not.toBe("");
+
+                expect(feed.url).toBeDefined();
+                expect(typeof feed.url).toMatch("string");
+                expect(feed.url.trim().length).not.toBe(0);
             });
         }
         for (var i = 0; i < allFeeds.length; i++) {
@@ -41,10 +43,13 @@ $(function () {
             testEachFeedInallFeeds(feed);
         };
 
+
+
         function testNameInAllFeeds(feed) {
             it('each feed has a name defined and that the name is not empty', function () {
                 expect(feed.name).toBeDefined();
-                expect(feed.name).not.toBe("");
+                expect(typeof feed.name).toMatch('string');
+                expect(feed.name.trim().length).not.toBe(0);
             });
         };
 
@@ -58,19 +63,24 @@ $(function () {
 
 
     describe('The menu', function () {
-
+        /* Test that ensures the menu element is hidden by default.*/
         it('the menu element is hidden by default', function () {
-            expect($('body').hasClass("menu-hidden")).toBeTruthy();
+            expect($('body').hasClass("menu-hidden")).toBe(true);
         });
 
+        /* Test that ensures the menu changes visibility when the
+		 *  menu icon is clicked. This test has two expectations:
+		 *  the menu displays when clicked and hides when clicked again.
+		 */
+        it('the menu changes visibility when the menu icon is clicked', function () {
+            expect($('body').hasClass("menu-hidden")).toBe(true);
 
+            $('.menu-icon-link').trigger('click');
+            expect($('body').hasClass("menu-hidden")).toBe(false);
 
+            $('.menu-icon-link').trigger('click');
+            expect($('body').hasClass("menu-hidden")).toBe(true);
 
-        it('the menu display when clicked and the menu hide when clicked again', function () {
-            expect($('body').hasClass("menu-hidden")).toBeTruthy();
-
-            $('a.menu-icon-link').trigger('click');
-            expect($('body').hasClass("menu-hidden")).not.toBeTruthy();
         });
 
     });
@@ -79,46 +89,39 @@ $(function () {
 
     describe('Initial Entries', function () {
 
-        var entry;
-        beforeEach(function (done) {
-            $(".feed").empty();
-            loadFeed(0, function () {
-                entry = $('.feed').find(".entry").text();
-                done();
-            });
 
+        beforeEach(function (done) {
+            loadFeed(0, done);
         });
 
-        it('there is at least a single .entry element within the .feed container', function (done) {
-            expect(entry).not.toEqual("");
-            done();
+        it('there is at least a single .entry element within the .feed container', function () {
+            var items = $('.feed').find('.entry');
+            expect(items.length).toBeGreaterThan(0);
         });
 
     });
 
     describe('New Feed Selection', function () {
 
-        var entries_first;
-        var entries_second;
+        var entries;
+
         beforeEach(function (done) {
-            $(".feed").empty();
-            loadFeed(0, function () {
-                entries_first = $('.feed').find("h2").text();
-                loadFeed(1, function () {
-                    entries_second = $('.feed').find("h2").text();
-                    done();
-                });
-            });
+
+            loadFeed(1, (function () {
+                entries = $(".feed").html();
+            }));
+
+            done();
 
         });
 
         it('the content actually changes', function (done) {
-            expect(entries_first).not.toEqual(entries_second);
-            done();
+            loadFeed(2,done);
+            expect($(".feed").html()).not.toEqual(entries);
         });
     });
 
 
 
 
-} ());
+}());
