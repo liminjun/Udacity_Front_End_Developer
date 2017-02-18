@@ -1,0 +1,12 @@
+body {
+    text-align: center;
+}
+#btn-start{
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+    background-color: red;
+    border: none;
+}
