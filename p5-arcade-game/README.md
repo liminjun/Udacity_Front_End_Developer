@@ -11,7 +11,7 @@
 
 Visit the link: [http://liminjun.github.io/Udacity_Front_End_Developer/p5-arcade-game/index.html](http://liminjun.github.io/Udacity_Front_End_Developer/p5-arcade-game/index.html)
 
-#### 1.Run it locally
+#### Run it locally
 
 **1.** Clone this repo:
 
@@ -46,3 +46,7 @@ Visit the link in browser. ["http://localhost:3000"]("http://localhost:3000"). T
 **4.** You will get **100** score when you go up to the top without hitting by the enemies.
 
 **5.** You should refresh the page to restart.
+
+The screenshot as follow:
+![acrade-game](https://cloud.githubusercontent.com/assets/966009/23091786/1314b348-f5f9-11e6-9d1c-0cabc5f68fdc.jpg)
+
