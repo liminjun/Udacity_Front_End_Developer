@@ -41,7 +41,7 @@ $(function () {
         for (var i = 0; i < allFeeds.length; i++) {
             var feed = allFeeds[i];
             testEachFeedInallFeeds(feed);
-        };
+        }
 
 
 
@@ -51,9 +51,9 @@ $(function () {
                 expect(typeof feed.name).toMatch('string');
                 expect(feed.name.trim().length).not.toBe(0);
             });
-        };
-
-        for (var i = 0; i < allFeeds.length; i++) {
+        }
+        var allFeedsLength = allFeeds.length;
+        for (var i = 0; i < allFeedsLength; i++) {
             var feed = allFeeds[i];
             testNameInAllFeeds(feed);
         }
@@ -73,7 +73,7 @@ $(function () {
 		 *  the menu displays when clicked and hides when clicked again.
 		 */
         it('the menu changes visibility when the menu icon is clicked', function () {
-            expect($('body').hasClass("menu-hidden")).toBe(true);
+
 
             $('.menu-icon-link').trigger('click');
             expect($('body').hasClass("menu-hidden")).toBe(false);
@@ -109,15 +109,19 @@ $(function () {
 
             loadFeed(1, (function () {
                 entries = $(".feed").html();
+                done();
             }));
 
-            done();
+
 
         });
 
         it('the content actually changes', function (done) {
-            loadFeed(2,done);
-            expect($(".feed").html()).not.toEqual(entries);
+            loadFeed(2, function () {
+                expect($(".feed").html()).not.toEqual(entries);
+                done();
+            });
+
         });
     });
 
