@@ -1,0 +1,332 @@
+{
+    "meta": {
+        "code": 200,
+        "requestId": "58a996ac4c1f670f7a5dee85"
+    },
+    "response": {
+        "venues": [
+            {
+                "id": "525e1a3511d2b58358eef1b5",
+                "name": "Caltrain #195",
+                "contact": {},
+                "location": {
+                    "lat": 37.698959,
+                    "lng": -122.401842,
+                    "labeledLatLngs": [
+                        {
+                            "label": "display",
+                            "lat": 37.698959,
+                            "lng": -122.401842
+                        }
+                    ],
+                    "distance": 199,
+                    "cc": "US",
+                    "city": "Brisbane",
+                    "state": "CA",
+                    "country": "美国",
+                    "formattedAddress": [
+                        "Brisbane, CA",
+                        "美国"
+                    ]
+                },
+                "categories": [
+                    {
+                        "id": "4bf58dd8d48988d1fc931735",
+                        "name": "Light Rail Station",
+                        "pluralName": "Light Rail Stations",
+                        "shortName": "Light Rail",
+                        "icon": {
+                            "prefix": "https:\/\/ss3.4sqi.net\/img\/categories_v2\/travel\/lightrail_",
+                            "suffix": ".png"
+                        },
+                        "primary": true
+                    }
+                ],
+                "verified": false,
+                "stats": {
+                    "checkinsCount": 9,
+                    "usersCount": 9,
+                    "tipCount": 0
+                },
+                "venueRatingBlacklisted": true,
+                "beenHere": {
+                    "lastCheckinExpiredAt": 0
+                },
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "hereNow": {
+                    "count": 0,
+                    "summary": "Nobody here",
+                    "groups": []
+                },
+                "referralId": "v-1487509164",
+                "venueChains": [],
+                "hasPerk": false
+            },
+            {
+                "id": "41059b00f964a520850b1fe3",
+                "name": "舊金山國際機場 (SFO) (San Francisco International Airport)",
+                "contact": {
+                    "phone": "6508218211",
+                    "formattedPhone": "(650) 821-8211",
+                    "twitter": "flysfo",
+                    "facebookUsername": "flySFO",
+                    "facebookName": "San Francisco International Airport (SFO)"
+                },
+                "location": {
+                    "address": "N McDonnell Rd",
+                    "crossStreet": "at Link Rd",
+                    "lat": 37.617024478717866,
+                    "lng": -122.38695053927138,
+                    "distance": 9308,
+                    "postalCode": "94128",
+                    "cc": "US",
+                    "city": "旧金山",
+                    "state": "CA",
+                    "country": "美国",
+                    "formattedAddress": [
+                        "N McDonnell Rd (at Link Rd)",
+                        "旧金山, CA 94128",
+                        "美国"
+                    ]
+                },
+                "categories": [
+                    {
+                        "id": "4bf58dd8d48988d1ed931735",
+                        "name": "Airport",
+                        "pluralName": "Airports",
+                        "shortName": "Airport",
+                        "icon": {
+                            "prefix": "https:\/\/ss3.4sqi.net\/img\/categories_v2\/travel\/airport_",
+                            "suffix": ".png"
+                        },
+                        "primary": true
+                    }
+                ],
+                "verified": true,
+                "stats": {
+                    "checkinsCount": 1917198,
+                    "usersCount": 390737,
+                    "tipCount": 3277
+                },
+                "url": "http:\/\/flysfo.com",
+                "beenHere": {
+                    "lastCheckinExpiredAt": 0
+                },
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "storeId": "",
+                "hereNow": {
+                    "count": 8,
+                    "summary": "8 people are here",
+                    "groups": [
+                        {
+                            "type": "others",
+                            "name": "Other people here",
+                            "count": 8,
+                            "items": []
+                        }
+                    ]
+                },
+                "referralId": "v-1487509164",
+                "venueChains": [
+                    {
+                        "id": "5569fad6a7c8896abe7d4eb6"
+                    }
+                ],
+                "hasPerk": false
+            },
+            {
+                "id": "50c2424fe4b0fb71428b3954",
+                "name": "Goldenstate Lumber & Plywood",
+                "contact": {},
+                "location": {
+                    "lat": 37.70281529113419,
+                    "lng": -122.3996132001327,
+                    "labeledLatLngs": [
+                        {
+                            "label": "display",
+                            "lat": 37.70281529113419,
+                            "lng": -122.3996132001327
+                        }
+                    ],
+                    "distance": 315,
+                    "postalCode": "94005",
+                    "cc": "US",
+                    "city": "Brisbane",
+                    "state": "CA",
+                    "country": "美国",
+                    "formattedAddress": [
+                        "Brisbane, CA 94005",
+                        "美国"
+                    ]
+                },
+                "categories": [
+                    {
+                        "id": "4bf58dd8d48988d1ff941735",
+                        "name": "Miscellaneous Shop",
+                        "pluralName": "Miscellaneous Shops",
+                        "shortName": "Shop",
+                        "icon": {
+                            "prefix": "https:\/\/ss3.4sqi.net\/img\/categories_v2\/shops\/default_",
+                            "suffix": ".png"
+                        },
+                        "primary": true
+                    }
+                ],
+                "verified": false,
+                "stats": {
+                    "checkinsCount": 13,
+                    "usersCount": 11,
+                    "tipCount": 0
+                },
+                "allowMenuUrlEdit": true,
+                "beenHere": {
+                    "lastCheckinExpiredAt": 0
+                },
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "hereNow": {
+                    "count": 0,
+                    "summary": "Nobody here",
+                    "groups": []
+                },
+                "referralId": "v-1487509164",
+                "venueChains": [],
+                "hasPerk": false
+            },
+            {
+                "id": "4c00a5dadf6c0f478ac98b22",
+                "name": "Train",
+                "contact": {},
+                "location": {
+                    "lat": 37.70151721317969,
+                    "lng": -122.40171519820821,
+                    "labeledLatLngs": [
+                        {
+                            "label": "display",
+                            "lat": 37.70151721317969,
+                            "lng": -122.40171519820821
+                        }
+                    ],
+                    "distance": 226,
+                    "postalCode": "94005",
+                    "cc": "US",
+                    "city": "Brisbane",
+                    "state": "CA",
+                    "country": "美国",
+                    "formattedAddress": [
+                        "Brisbane, CA 94005",
+                        "美国"
+                    ]
+                },
+                "categories": [
+                    {
+                        "id": "4bf58dd8d48988d1fc931735",
+                        "name": "Light Rail Station",
+                        "pluralName": "Light Rail Stations",
+                        "shortName": "Light Rail",
+                        "icon": {
+                            "prefix": "https:\/\/ss3.4sqi.net\/img\/categories_v2\/travel\/lightrail_",
+                            "suffix": ".png"
+                        },
+                        "primary": true
+                    }
+                ],
+                "verified": false,
+                "stats": {
+                    "checkinsCount": 66,
+                    "usersCount": 44,
+                    "tipCount": 0
+                },
+                "venueRatingBlacklisted": true,
+                "beenHere": {
+                    "lastCheckinExpiredAt": 0
+                },
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "hereNow": {
+                    "count": 0,
+                    "summary": "Nobody here",
+                    "groups": []
+                },
+                "referralId": "v-1487509164",
+                "venueChains": [],
+                "hasPerk": false
+            },
+            {
+                "id": "4a58dbe7f964a52010b81fe3",
+                "name": "San Francisco Dump",
+                "contact": {},
+                "location": {
+                    "address": "501 Tunnel Ave",
+                    "crossStreet": "at Recycle Rd",
+                    "lat": 37.70898161356009,
+                    "lng": -122.39976808563485,
+                    "labeledLatLngs": [
+                        {
+                            "label": "display",
+                            "lat": 37.70898161356009,
+                            "lng": -122.39976808563485
+                        }
+                    ],
+                    "distance": 1000,
+                    "postalCode": "94134",
+                    "cc": "US",
+                    "city": "旧金山",
+                    "state": "CA",
+                    "country": "美国",
+                    "formattedAddress": [
+                        "501 Tunnel Ave (at Recycle Rd)",
+                        "旧金山, CA 94134",
+                        "美国"
+                    ]
+                },
+                "categories": [
+                    {
+                        "id": "4bf58dd8d48988d130941735",
+                        "name": "Building",
+                        "pluralName": "Buildings",
+                        "shortName": "Building",
+                        "icon": {
+                            "prefix": "https:\/\/ss3.4sqi.net\/img\/categories_v2\/building\/default_",
+                            "suffix": ".png"
+                        },
+                        "primary": true
+                    }
+                ],
+                "verified": false,
+                "stats": {
+                    "checkinsCount": 650,
+                    "usersCount": 411,
+                    "tipCount": 7
+                },
+                "venueRatingBlacklisted": true,
+                "beenHere": {
+                    "lastCheckinExpiredAt": 0
+                },
+                "specials": {
+                    "count": 0,
+                    "items": []
+                },
+                "hereNow": {
+                    "count": 0,
+                    "summary": "Nobody here",
+                    "groups": []
+                },
+                "referralId": "v-1487509164",
+                "venueChains": [],
+                "hasPerk": false
+            }
+        ],
+        "confident": false
+    }
+}
