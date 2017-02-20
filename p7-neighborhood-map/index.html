@@ -9,59 +9,45 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
-                    aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#">My Neighborhood Map</a>
-            </div>
 
-            <!--/.navbar-collapse -->
 
+
+    <div class="container">
+        <div class="row">
 
         </div>
-    </nav>
+        <div class="row">
+            <div class="col-sm-2">
+                <h3>Search Places</h3>
+                <form class="form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Place Name" class="form-control"
+                        data-bind="textInput: searchText, valueUpdate: 'keyup'">
 
-    <div class="jumbotron">
-        <div class="container">
-            <div class="row">
-                
-            </div>
-            <div class="row">
-                <div class="col-sm-3">
-                    <h3>Search Places</h3>
-                    <form class="form">
-                        <div class="form-group">
-                            <input type="text" placeholder="Place Name" class="form-control">
-
-                        </div>
-                        <div class="form-group">
-                            <button type="submit" class="btn btn-success">Search</button>
-                        </div>
-
-                    </form>
-                    <div class="place-list">
-                        <ol>
-                            <li></li>
-                        </ol>
                     </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-success">Search</button>
+                    </div>
+                </form>
+                <div class="place-list">
+                    <ol data-bind="foreach:places">
+                        <li>
+                           <!--<span data-bind="text:$index"></span> -->
+                           <a href="javascript:void(0)" data-bind="text:name,click:$parent.placeClick"></a>
+                        </li>
+                    </ol>
                 </div>
-
             </div>
-            <div class="row">
-                <h3>Google Maps</h3>
+            <div class="col-sm-10">
                 <div id="map-container"></div>
             </div>
 
-
         </div>
+
+
+
     </div>
+
 
     <footer>
         <p>&copy; Lee 2016</p>

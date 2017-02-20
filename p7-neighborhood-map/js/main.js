@@ -6,7 +6,7 @@ function initMap() {
   var myLatLng = { lat: 37.76680465, lng: -122.41403674111 };
 
   map = new google.maps.Map(document.getElementById('map-container'), {
-    zoom: 14,
+    zoom: 16,
     center: myLatLng
   });
 
@@ -17,8 +17,14 @@ function initMap() {
 var PlacesViewModel = function () {
   var self = this;
 
-  self.places = [];
+  self.searchText = ko.observable('');
+
+  self.places = ko.observableArray([]);
   self.myCenter = "37.76680465,-122.41403674111";
+
+  google.maps.event.addListener(map, 'click', function () {
+    infowindow.close();
+  });
 
   $.ajax({
     url: 'https://api.foursquare.com/v2/venues/search?ll=' + self.myCenter +
@@ -26,11 +32,15 @@ var PlacesViewModel = function () {
     dataType: "json",
     success: function (result) {
       if (result.meta.code == 200) {
+
         
-        self.places = result.response.venues;
-        self.places.forEach(function (place) {
+        var resultData=result.response.venues;
+        resultData.forEach(function (place) {
           addMarker(place);
         });
+        self.places(result.response.venues);
+
+   
       }
     },
     error: function (e) {
@@ -38,25 +48,21 @@ var PlacesViewModel = function () {
     }
   });
 
-  // $.getJSON('api.data.json', function (respone) {
-  //   self.places = respone;
+ 
 
-  //   self.places.forEach(function (place) {
-  //     addMarker(place);
-  //   });
-  // });
-
+  self.placeClick = function (item) {
+    var currentMarker = item.marker;
+    google.maps.event.trigger(currentMarker, "click");
+  }
 
 }
 
-function getYelpInfo(name, url, snippet_image_url, snippet_text, address) {
-  var yelpUrl = "";
-}
 function addMarker(place) {
-  var location=place.location;
-  var latitude=location.lat;
-  var longitude=location.lng;
-  var title= place.name;
+  var location = place.location;
+  var latitude = location.lat;
+  var longitude = location.lng;
+  var title = place.name;
+  var venueId = place.id;
 
   place.marker = new google.maps.Marker({
     position: { lat: latitude, lng: longitude },
@@ -66,14 +72,31 @@ function addMarker(place) {
 
   place.marker.addListener("click", function () {
     var that = this;
-    showMarkerInfo(that);
+    showMarkerInfo(venueId, that);
   });
 }
 
-function showMarkerInfo(marker) {
+function showMarkerInfo(venueId, marker) {
+  $.ajax({
+    url: 'https://api.foursquare.com/v2/venues/' + venueId +
+    '?client_id=NONGGLXBKX5VFFIKKEK1HXQPFAFVMEBTRXBWJUPEN4K14JUE&client_secret=ZZDD1SLJ4PA2X4AJ4V23OOZ53UM4SFZX0KORGWP5TZDK4YYJ&v=20160101&limit=10',
+    dataType: "json",
+    success: function (result) {
+      if (result.meta.code == 200) {
+        var venueData = result.response.venue;
+        var venueFirstImage = venueData.photos.groups[0].items[0].prefix + "200x200" + venueData.photos.groups[0].items[0].suffix;
 
-  var infowindow = new google.maps.InfoWindow({
-    content: marker.yelpInfo
+        var venueDescription = venueData.description ? venueData.description : "";
+        infowindow = new google.maps.InfoWindow({
+          content: "<div style='width:220px;'><h3>" + venueData.name + "</h3><div><img src=" + venueFirstImage + "></div><div><p>" + venueDescription + "</p></div><div><a target='_blank' href=" + venueData.canonicalUrl + ">Link</a></div></div>"
+        });
+        infowindow.open(map, marker);
+      }
+    },
+    error: function (e) {
+      document.getElementById("error").innerHTML = "<h4>Get data from Foursquare's API  failed.</h4>";
+    }
   });
-  infowindow.open(map, marker);
+
+
 }

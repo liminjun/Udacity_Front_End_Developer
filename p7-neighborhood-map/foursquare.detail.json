@@ -1,0 +1,947 @@
+{
+    "meta": {
+        "code": 200,
+        "requestId": "58aadccc351e3d0948230409"
+    },
+    "response": {
+        "venue": {
+            "id": "4a5d3d05f964a5206ebd1fe3",
+            "name": "Yoga Mayu",
+            "contact": {
+                "phone": "4156714712",
+                "formattedPhone": "(415) 671-4712",
+                "twitter": "yogamayu"
+            },
+            "location": {
+                "address": "2051 Harrison St",
+                "crossStreet": "16th",
+                "lat": 37.76484887467785,
+                "lng": -122.41312057097265,
+                "labeledLatLngs": [
+                    {
+                        "label": "display",
+                        "lat": 37.76484887467785,
+                        "lng": -122.41312057097265
+                    }
+                ],
+                "postalCode": "94110",
+                "cc": "US",
+                "city": "旧金山",
+                "state": "CA",
+                "country": "美国",
+                "formattedAddress": [
+                    "2051 Harrison St (16th)",
+                    "旧金山, CA 94110",
+                    "美国"
+                ]
+            },
+            "canonicalUrl": "https:\/\/foursquare.com\/v\/yoga-mayu\/4a5d3d05f964a5206ebd1fe3",
+            "categories": [
+                {
+                    "id": "4bf58dd8d48988d102941735",
+                    "name": "Yoga Studio",
+                    "pluralName": "Yoga Studios",
+                    "shortName": "Yoga Studio",
+                    "icon": {
+                        "prefix": "https:\/\/ss3.4sqi.net\/img\/categories_v2\/shops\/gym_yogastudio_",
+                        "suffix": ".png"
+                    },
+                    "primary": true
+                }
+            ],
+            "verified": true,
+            "stats": {
+                "checkinsCount": 1087,
+                "usersCount": 576,
+                "tipCount": 7,
+                "visitsCount": 1655
+            },
+            "url": "http:\/\/www.yogamayu.com",
+            "hasMenu": true,
+            "likes": {
+                "count": 27,
+                "groups": [
+                    {
+                        "type": "others",
+                        "count": 27,
+                        "items": []
+                    }
+                ],
+                "summary": "27 Likes"
+            },
+            "dislike": false,
+            "ok": false,
+            "rating": 7.9,
+            "ratingColor": "C5DE35",
+            "ratingSignals": 38,
+            "menu": {
+                "type": "Prices",
+                "label": "Prices",
+                "anchor": "View Prices",
+                "url": "https:\/\/foursquare.com\/v\/yoga-mayu\/4a5d3d05f964a5206ebd1fe3\/menu",
+                "mobileUrl": "https:\/\/foursquare.com\/v\/4a5d3d05f964a5206ebd1fe3\/device_menu"
+            },
+            "allowMenuUrlEdit": true,
+            "beenHere": {
+                "count": 0,
+                "unconfirmedCount": 0,
+                "marked": false,
+                "lastCheckinExpiredAt": 0
+            },
+            "specials": {
+                "count": 0,
+                "items": []
+            },
+            "photos": {
+                "count": 4,
+                "groups": [
+                    {
+                        "type": "venue",
+                        "name": "Venue photos",
+                        "count": 4,
+                        "items": [
+                            {
+                                "id": "51e9b8adccda6bac1f860692",
+                                "createdAt": 1374271661,
+                                "source": {
+                                    "name": "Foursquare Web",
+                                    "url": "https:\/\/foursquare.com"
+                                },
+                                "prefix": "https:\/\/igx.4sqi.net\/img\/general\/",
+                                "suffix": "\/61294490_iS1oEUGRGfOWqXjvuOzo3qDR0IYqyhUXXDZMAP-GTQE.jpg",
+                                "width": 2000,
+                                "height": 945,
+                                "user": {
+                                    "id": "61294490",
+                                    "firstName": "Yoga Mayu",
+                                    "gender": "none",
+                                    "photo": {
+                                        "prefix": "https:\/\/igx.4sqi.net\/img\/user\/",
+                                        "suffix": "\/61294490-WJUCDXOJGMTZ1SXB.png"
+                                    },
+                                    "type": "venuePage",
+                                    "venue": {
+                                        "id": "4a5d3d05f964a5206ebd1fe3"
+                                    }
+                                },
+                                "visibility": "public"
+                            },
+                            {
+                                "id": "51e9b8b3ccda6bac1f860c2a",
+                                "createdAt": 1374271667,
+                                "source": {
+                                    "name": "Foursquare Web",
+                                    "url": "https:\/\/foursquare.com"
+                                },
+                                "prefix": "https:\/\/igx.4sqi.net\/img\/general\/",
+                                "suffix": "\/61294490_VrV_CudDjmsogwzO7UbPzX9PJSnE_3KqkE2zn5vEbWM.jpg",
+                                "width": 2015,
+                                "height": 1637,
+                                "user": {
+                                    "id": "61294490",
+                                    "firstName": "Yoga Mayu",
+                                    "gender": "none",
+                                    "photo": {
+                                        "prefix": "https:\/\/igx.4sqi.net\/img\/user\/",
+                                        "suffix": "\/61294490-WJUCDXOJGMTZ1SXB.png"
+                                    },
+                                    "type": "venuePage",
+                                    "venue": {
+                                        "id": "4a5d3d05f964a5206ebd1fe3"
+                                    }
+                                },
+                                "visibility": "public"
+                            },
+                            {
+                                "id": "51e9b8b8ccda6bac1f8610d1",
+                                "createdAt": 1374271672,
+                                "source": {
+                                    "name": "Foursquare Web",
+                                    "url": "https:\/\/foursquare.com"
+                                },
+                                "prefix": "https:\/\/igx.4sqi.net\/img\/general\/",
+                                "suffix": "\/61294490_RHreGteKUUCIkwrjhHy9ljhKNGIyH9AWe_gIBFUfaHU.jpg",
+                                "width": 2048,
+                                "height": 1207,
+                                "user": {
+                                    "id": "61294490",
+                                    "firstName": "Yoga Mayu",
+                                    "gender": "none",
+                                    "photo": {
+                                        "prefix": "https:\/\/igx.4sqi.net\/img\/user\/",
+                                        "suffix": "\/61294490-WJUCDXOJGMTZ1SXB.png"
+                                    },
+                                    "type": "venuePage",
+                                    "venue": {
+                                        "id": "4a5d3d05f964a5206ebd1fe3"
+                                    }
+                                },
+                                "visibility": "public"
+                            },
+                            {
+                                "id": "51e9b8beccda6bac1f8616ee",
+                                "createdAt": 1374271678,
+                                "source": {
+                                    "name": "Foursquare Web",
+                                    "url": "https:\/\/foursquare.com"
+                                },
+                                "prefix": "https:\/\/igx.4sqi.net\/img\/general\/",
+                                "suffix": "\/61294490_d7NYz7dDxy1yBKpy_IV8P_WIC_-MyOT3eWzoDEMR-OY.jpg",
+                                "width": 604,
+                                "height": 405,
+                                "user": {
+                                    "id": "61294490",
+                                    "firstName": "Yoga Mayu",
+                                    "gender": "none",
+                                    "photo": {
+                                        "prefix": "https:\/\/igx.4sqi.net\/img\/user\/",
+                                        "suffix": "\/61294490-WJUCDXOJGMTZ1SXB.png"
+                                    },
+                                    "type": "venuePage",
+                                    "venue": {
+                                        "id": "4a5d3d05f964a5206ebd1fe3"
+                                    }
+                                },
+                                "visibility": "public"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "venuePage": {
+                "id": "61294490"
+            },
+            "reasons": {
+                "count": 0,
+                "items": []
+            },
+            "description": "Yoga Mayu is known in San Francisco for having a genuine and personal approach to yoga. We offer a range of Vinyasa, Hatha and Mellow flow classes",
+            "storeId": "",
+            "page": {
+                "user": {
+                    "id": "61294490",
+                    "firstName": "Yoga Mayu",
+                    "gender": "none",
+                    "photo": {
+                        "prefix": "https:\/\/igx.4sqi.net\/img\/user\/",
+                        "suffix": "\/61294490-WJUCDXOJGMTZ1SXB.png"
+                    },
+                    "type": "venuePage",
+                    "venue": {
+                        "id": "4a5d3d05f964a5206ebd1fe3"
+                    },
+                    "tips": {
+                        "count": 0
+                    },
+                    "lists": {
+                        "groups": [
+                            {
+                                "type": "created",
+                                "count": 2,
+                                "items": []
+                            }
+                        ]
+                    },
+                    "homeCity": "San Francisco, CA",
+                    "bio": "",
+                    "contact": {}
+                }
+            },
+            "hereNow": {
+                "count": 0,
+                "summary": "Nobody here",
+                "groups": []
+            },
+            "createdAt": 1247624453,
+            "tips": {
+                "count": 7,
+                "groups": [
+                    {
+                        "type": "others",
+                        "name": "All tips",
+                        "count": 7,
+                        "items": [
+                            {
+                                "id": "509b0360e4b0f43d9a400e25",
+                                "createdAt": 1352336224,
+                                "text": "Leigh is one of the top 2 yoga teachers I've ever had and I've been doing yoga for about 15 years (badly). She's amazing. Go to her class!!",
+                                "type": "user",
+                                "canonicalUrl": "https:\/\/foursquare.com\/item\/509b0360e4b0f43d9a400e25",
+                                "lang": "en",
+                                "likes": {
+                                    "count": 1,
+                                    "groups": [
+                                        {
+                                            "type": "others",
+                                            "count": 1,
+                                            "items": [
+                                                {
+                                                    "id": "65452",
+                                                    "firstName": "Bibiana",
+                                                    "lastName": "Lozano",
+                                                    "gender": "female",
+                                                    "photo": {
+                                                        "prefix": "https:\/\/igx.4sqi.net\/img\/user\/",
+                                                        "suffix": "\/65452_1256537726356.jpg"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "summary": "1 like"
+                                },
+                                "logView": true,
+                                "agreeCount": 1,
+                                "disagreeCount": 0,
+                                "todo": {
+                                    "count": 0
+                                },
+                                "user": {
+                                    "id": "214072",
+                                    "firstName": "Autumn",
+                                    "lastName": "Kelley",
+                                    "gender": "female",
+                                    "photo": {
+                                        "prefix": "https:\/\/irs3.4sqi.net\/img\/user\/",
+                                        "suffix": "\/CIJCRC3VRA3CO1IW.jpg"
+                                    }
+                                },
+                                "authorInteractionType": "liked"
+                            },
+                            {
+                                "id": "4eddaf120e011b46f24e539c",
+                                "createdAt": 1323151122,
+                                "text": "Simply the greatest yoga experience you will find in the city.",
+                                "type": "user",
+                                "canonicalUrl": "https:\/\/foursquare.com\/item\/4eddaf120e011b46f24e539c",
+                                "lang": "en",
+                                "likes": {
+                                    "count": 1,
+                                    "groups": [
+                                        {
+                                            "type": "others",
+                                            "count": 1,
+                                            "items": [
+                                                {
+                                                    "id": "17721511",
+                                                    "firstName": "ROBERT",
+                                                    "lastName": "DONALD",
+                                                    "gender": "male",
+                                                    "photo": {
+                                                        "prefix": "https:\/\/igx.4sqi.net\/img\/user\/",
+                                                        "suffix": "\/F1FQUW2PTUSESDLS.jpg"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "summary": "1 like"
+                                },
+                                "logView": true,
+                                "agreeCount": 1,
+                                "disagreeCount": 0,
+                                "todo": {
+                                    "count": 0
+                                },
+                                "user": {
+                                    "id": "17721511",
+                                    "firstName": "ROBERT",
+                                    "lastName": "DONALD",
+                                    "gender": "male",
+                                    "photo": {
+                                        "prefix": "https:\/\/igx.4sqi.net\/img\/user\/",
+                                        "suffix": "\/F1FQUW2PTUSESDLS.jpg"
+                                    }
+                                }
+                            },
+                            {
+                                "id": "4d6aa9f17b7d8eec48ec7bd0",
+                                "createdAt": 1298835953,
+                                "text": "Avoid wearing footwear during your class to build true balance and stability. Namasté",
+                                "type": "user",
+                                "canonicalUrl": "https:\/\/foursquare.com\/item\/4d6aa9f17b7d8eec48ec7bd0",
+                                "lang": "en",
+                                "likes": {
+                                    "count": 1,
+                                    "groups": [
+                                        {
+                                            "type": "others",
+                                            "count": 1,
+                                            "items": [
+                                                {
+                                                    "id": "65452",
+                                                    "firstName": "Bibiana",
+                                                    "lastName": "Lozano",
+                                                    "gender": "female",
+                                                    "photo": {
+                                                        "prefix": "https:\/\/igx.4sqi.net\/img\/user\/",
+                                                        "suffix": "\/65452_1256537726356.jpg"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "summary": "1 like"
+                                },
+                                "logView": true,
+                                "agreeCount": 1,
+                                "disagreeCount": 0,
+                                "todo": {
+                                    "count": 0
+                                },
+                                "user": {
+                                    "id": "7241078",
+                                    "firstName": "Zappos.com",
+                                    "gender": "none",
+                                    "photo": {
+                                        "prefix": "https:\/\/igx.4sqi.net\/img\/user\/",
+                                        "suffix": "\/MRHHM42KWZEKSVDF.jpg"
+                                    },
+                                    "type": "page"
+                                }
+                            },
+                            {
+                                "id": "56a19749498e511e3fc07c67",
+                                "createdAt": 1453430601,
+                                "text": "Lynn Noble's classes are amazing!",
+                                "type": "user",
+                                "canonicalUrl": "https:\/\/foursquare.com\/item\/56a19749498e511e3fc07c67",
+                                "lang": "en",
+                                "likes": {
+                                    "count": 0,
+                                    "groups": []
+                                },
+                                "logView": true,
+                                "agreeCount": 0,
+                                "disagreeCount": 0,
+                                "todo": {
+                                    "count": 0
+                                },
+                                "user": {
+                                    "id": "109912667",
+                                    "firstName": "Chloe",
+                                    "lastName": "Condon",
+                                    "gender": "female",
+                                    "photo": {
+                                        "prefix": "https:\/\/igx.4sqi.net\/img\/user\/",
+                                        "suffix": "\/109912667-RSTOD0HBTUAXGMOG.jpg"
+                                    }
+                                },
+                                "authorInteractionType": "liked"
+                            },
+                            {
+                                "id": "55d5e376498e3841b65ec914",
+                                "createdAt": 1440080758,
+                                "text": "Gizelle and Jody are great teachers for the All Levels classes. That class trends to experienced students which gives you the choice of intensity. No chanting, songs or sermons just movement & breath",
+                                "type": "user",
+                                "canonicalUrl": "https:\/\/foursquare.com\/item\/55d5e376498e3841b65ec914",
+                                "lang": "en",
+                                "likes": {
+                                    "count": 0,
+                                    "groups": []
+                                },
+                                "logView": true,
+                                "agreeCount": 1,
+                                "disagreeCount": 0,
+                                "todo": {
+                                    "count": 0
+                                },
+                                "user": {
+                                    "id": "377170",
+                                    "firstName": "Mad",
+                                    "gender": "female",
+                                    "photo": {
+                                        "prefix": "https:\/\/igx.4sqi.net\/img\/user\/",
+                                        "suffix": "\/V1SG5DW4MGEB4TDS.jpg"
+                                    }
+                                },
+                                "authorInteractionType": "liked"
+                            },
+                            {
+                                "id": "55137d17498e9974195e2ce2",
+                                "createdAt": 1427340567,
+                                "text": "They get snobby about you taking off your shoes",
+                                "type": "user",
+                                "canonicalUrl": "https:\/\/foursquare.com\/item\/55137d17498e9974195e2ce2",
+                                "lang": "en",
+                                "likes": {
+                                    "count": 0,
+                                    "groups": []
+                                },
+                                "logView": true,
+                                "agreeCount": 0,
+                                "disagreeCount": 1,
+                                "todo": {
+                                    "count": 0
+                                },
+                                "user": {
+                                    "id": "39638092",
+                                    "firstName": "Clare",
+                                    "gender": "female",
+                                    "photo": {
+                                        "prefix": "https:\/\/irs3.4sqi.net\/img\/user\/",
+                                        "suffix": "\/39638092-3DVELT1QMMUHFY0I.jpg"
+                                    }
+                                },
+                                "authorInteractionType": "meh"
+                            },
+                            {
+                                "id": "513987a9e4b0e3f757ebffa5",
+                                "createdAt": 1362724777,
+                                "text": "Enjoyed James' mellow flow class! Check him out!",
+                                "type": "user",
+                                "canonicalUrl": "https:\/\/foursquare.com\/item\/513987a9e4b0e3f757ebffa5",
+                                "lang": "en",
+                                "likes": {
+                                    "count": 0,
+                                    "groups": []
+                                },
+                                "logView": true,
+                                "agreeCount": 0,
+                                "disagreeCount": 0,
+                                "todo": {
+                                    "count": 0
+                                },
+                                "user": {
+                                    "id": "11939017",
+                                    "firstName": "Gürkan",
+                                    "lastName": "Gezgin",
+                                    "gender": "male",
+                                    "photo": {
+                                        "prefix": "https:\/\/irs3.4sqi.net\/img\/user\/",
+                                        "suffix": "\/11939017-RJVNRWDHU5VIWQIO.jpg"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            "tags": [
+                "yoga"
+            ],
+            "shortUrl": "http:\/\/4sq.com\/aug0zB",
+            "timeZone": "America\/Los_Angeles",
+            "listed": {
+                "count": 6,
+                "groups": [
+                    {
+                        "type": "others",
+                        "name": "Lists from other people",
+                        "count": 6,
+                        "items": [
+                            {
+                                "id": "57a24b74498ebc37cadbf4ae",
+                                "name": "Mission Fitness 💪🏻💪🏻💪🏻",
+                                "description": "",
+                                "type": "others",
+                                "user": {
+                                    "id": "2684456",
+                                    "firstName": "Jenny",
+                                    "lastName": "Ung",
+                                    "gender": "female",
+                                    "photo": {
+                                        "prefix": "https:\/\/igx.4sqi.net\/img\/user\/",
+                                        "suffix": "\/IRLUSOBLJDYIRSHY.jpg"
+                                    }
+                                },
+                                "editable": false,
+                                "public": true,
+                                "collaborative": false,
+                                "url": "\/dynamitemissj\/list\/mission-fitness-",
+                                "canonicalUrl": "https:\/\/foursquare.com\/dynamitemissj\/list\/mission-fitness-",
+                                "createdAt": 1470253940,
+                                "updatedAt": 1470255041,
+                                "photo": {
+                                    "id": "575ebacc498e50e8d21f601d",
+                                    "createdAt": 1465825996,
+                                    "prefix": "https:\/\/igx.4sqi.net\/img\/general\/",
+                                    "suffix": "\/20069_5sd4BPscJ6BFc0nzJPNBTZPWBHALeKICege3qVY2n0M.jpg",
+                                    "width": 1920,
+                                    "height": 1384,
+                                    "user": {
+                                        "id": "20069",
+                                        "firstName": "Michael",
+                                        "lastName": "Sprague",
+                                        "gender": "male",
+                                        "photo": {
+                                            "prefix": "https:\/\/igx.4sqi.net\/img\/user\/",
+                                            "suffix": "\/20069-RAQFXXQ5MB1PI3SL.jpg"
+                                        }
+                                    },
+                                    "visibility": "public"
+                                },
+                                "followers": {
+                                    "count": 0
+                                },
+                                "listItems": {
+                                    "count": 9,
+                                    "items": [
+                                        {
+                                            "id": "v4a5d3d05f964a5206ebd1fe3",
+                                            "createdAt": 1470254070
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "516e2b52e4b0870e32472b22",
+                                "name": "Sweat Now Here",
+                                "description": "",
+                                "type": "others",
+                                "user": {
+                                    "id": "18607",
+                                    "firstName": "André",
+                                    "lastName": "Lucero",
+                                    "gender": "male",
+                                    "photo": {
+                                        "prefix": "https:\/\/irs1.4sqi.net\/img\/user\/",
+                                        "suffix": "\/18607_1257321186111.jpg"
+                                    }
+                                },
+                                "editable": false,
+                                "public": true,
+                                "collaborative": false,
+                                "url": "\/andrelucero\/list\/sweat-now-here",
+                                "canonicalUrl": "https:\/\/foursquare.com\/andrelucero\/list\/sweat-now-here",
+                                "createdAt": 1366174546,
+                                "updatedAt": 1366174875,
+                                "followers": {
+                                    "count": 0
+                                },
+                                "listItems": {
+                                    "count": 2,
+                                    "items": [
+                                        {
+                                            "id": "v4a5d3d05f964a5206ebd1fe3",
+                                            "createdAt": 1366174546
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "4eb1092230f855c20f00e0a3",
+                                "name": "SF's YOGA studios",
+                                "description": "",
+                                "type": "others",
+                                "user": {
+                                    "id": "461808",
+                                    "firstName": "Victoria",
+                                    "lastName": "Hoang",
+                                    "gender": "female",
+                                    "photo": {
+                                        "prefix": "https:\/\/igx.4sqi.net\/img\/user\/",
+                                        "suffix": "\/SCNVOQ2TDUBIF411.jpg"
+                                    }
+                                },
+                                "editable": false,
+                                "public": true,
+                                "collaborative": false,
+                                "url": "\/user\/461808\/list\/sfs-yoga-studios",
+                                "canonicalUrl": "https:\/\/foursquare.com\/user\/461808\/list\/sfs-yoga-studios",
+                                "createdAt": 1320225058,
+                                "updatedAt": 1351802488,
+                                "followers": {
+                                    "count": 13
+                                },
+                                "listItems": {
+                                    "count": 25,
+                                    "items": [
+                                        {
+                                            "id": "v4a5d3d05f964a5206ebd1fe3",
+                                            "createdAt": 1320226444
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "id": "5604e869498e5e03783deebf",
+                                "name": "SF Yoga Spots",
+                                "description": "",
+                                "type": "others",
+                                "user": {
+                                    "id": "13250",
+                                    "firstName": "Roderic",
+                                    "lastName": "Campbell",
+                                    "gender": "male",
+                                    "photo": {
+                                        "prefix": "https:\/\/igx.4sqi.net\/img\/user\/",
+                                        "suffix": "\/13250-YLCUQFQ4W1GGAI2J.jpg"
+                                    }
+                                },
+                                "editable": false,
+                                "public": true,
+                                "collaborative": false,
+                                "url": "\/roderic\/list\/sf-yoga-spots",
+                                "canonicalUrl": "https:\/\/foursquare.com\/roderic\/list\/sf-yoga-spots",
+                                "createdAt": 1443162217,
+                                "updatedAt": 1478812246,
+                                "photo": {
+                                    "id": "500f8463e4b0754488ae1233",
+                                    "createdAt": 1343194211,
+                                    "prefix": "https:\/\/igx.4sqi.net\/img\/general\/",
+                                    "suffix": "\/lBaBGBkMCRcjRTaU0vsGzlJzDHkEnQU6JxvoxoZvIlw.jpg",
+                                    "width": 612,
+                                    "height": 612,
+                                    "user": {
+                                        "id": "514482",
+                                        "firstName": "Greg",
+                                        "lastName": "Bodenair",
+                                        "gender": "male",
+                                        "photo": {
+                                            "prefix": "https:\/\/irs3.4sqi.net\/img\/user\/",
+                                            "suffix": "\/514482-PABCKE2P52RYFKDR.jpg"
+                                        }
+                                    },
+                                    "visibility": "public"
+                                },
+                                "followers": {
+                                    "count": 0
+                                },
+                                "listItems": {
+                                    "count": 15,
+                                    "items": [
+                                        {
+                                            "id": "v4a5d3d05f964a5206ebd1fe3",
+                                            "createdAt": 1443162266
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            "phrases": [
+                {
+                    "phrase": "class",
+                    "sample": {
+                        "entities": [
+                            {
+                                "indices": [
+                                    23,
+                                    28
+                                ],
+                                "type": "keyPhrase"
+                            }
+                        ],
+                        "text": "... amazing. Go to her class!!"
+                    },
+                    "count": 5
+                },
+                {
+                    "phrase": "all levels",
+                    "sample": {
+                        "entities": [
+                            {
+                                "indices": [
+                                    27,
+                                    37
+                                ],
+                                "type": "keyPhrase"
+                            }
+                        ],
+                        "text": "... great teachers for the All Levels classes. That class trends to experienced..."
+                    },
+                    "count": 1
+                }
+            ],
+            "hours": {
+                "status": "Closed until 7:30 AM",
+                "isOpen": false,
+                "isLocalHoliday": true,
+                "localHolidayName": "Presidents' Day",
+                "timeframes": [
+                    {
+                        "days": "Mon, Wed",
+                        "includesToday": true,
+                        "open": [
+                            {
+                                "renderedTime": "7:30 AM\u20139:30 PM"
+                            }
+                        ],
+                        "segments": []
+                    },
+                    {
+                        "days": "Tue, Thu",
+                        "open": [
+                            {
+                                "renderedTime": "12:30 PM\u20139:30 PM"
+                            }
+                        ],
+                        "segments": []
+                    },
+                    {
+                        "days": "Fri",
+                        "open": [
+                            {
+                                "renderedTime": "12:30 PM\u20138:00 PM"
+                            }
+                        ],
+                        "segments": []
+                    },
+                    {
+                        "days": "Sat",
+                        "open": [
+                            {
+                                "renderedTime": "9:30 AM\u20136:30 PM"
+                            }
+                        ],
+                        "segments": []
+                    },
+                    {
+                        "days": "Sun",
+                        "open": [
+                            {
+                                "renderedTime": "9:30 AM\u20138:00 PM"
+                            }
+                        ],
+                        "segments": []
+                    }
+                ]
+            },
+            "popular": {
+                "isOpen": false,
+                "isLocalHoliday": true,
+                "localHolidayName": "Presidents' Day",
+                "timeframes": [
+                    {
+                        "days": "Today",
+                        "includesToday": true,
+                        "open": [
+                            {
+                                "renderedTime": "5:00 AM\u20139:00 AM"
+                            },
+                            {
+                                "renderedTime": "Noon\u20131:00 PM"
+                            },
+                            {
+                                "renderedTime": "4:00 PM\u20139:00 PM"
+                            }
+                        ],
+                        "segments": []
+                    },
+                    {
+                        "days": "Tue",
+                        "open": [
+                            {
+                                "renderedTime": "7:00 AM\u20138:00 AM"
+                            },
+                            {
+                                "renderedTime": "6:00 PM\u20139:00 PM"
+                            }
+                        ],
+                        "segments": []
+                    },
+                    {
+                        "days": "Wed",
+                        "open": [
+                            {
+                                "renderedTime": "5:00 AM\u20138:00 AM"
+                            },
+                            {
+                                "renderedTime": "Noon\u20131:00 PM"
+                            },
+                            {
+                                "renderedTime": "6:00 PM\u20139:00 PM"
+                            }
+                        ],
+                        "segments": []
+                    },
+                    {
+                        "days": "Thu",
+                        "open": [
+                            {
+                                "renderedTime": "7:00 AM\u20138:00 AM"
+                            },
+                            {
+                                "renderedTime": "Noon\u20131:00 PM"
+                            },
+                            {
+                                "renderedTime": "6:00 PM\u20139:00 PM"
+                            }
+                        ],
+                        "segments": []
+                    },
+                    {
+                        "days": "Fri",
+                        "open": [
+                            {
+                                "renderedTime": "5:00 AM\u20139:00 AM"
+                            },
+                            {
+                                "renderedTime": "Noon\u20132:00 PM"
+                            },
+                            {
+                                "renderedTime": "4:00 PM\u20135:00 PM"
+                            }
+                        ],
+                        "segments": []
+                    },
+                    {
+                        "days": "Sat",
+                        "open": [
+                            {
+                                "renderedTime": "9:00 AM\u20132:00 PM"
+                            },
+                            {
+                                "renderedTime": "4:00 PM\u20135:00 PM"
+                            }
+                        ],
+                        "segments": []
+                    },
+                    {
+                        "days": "Sun",
+                        "open": [
+                            {
+                                "renderedTime": "9:00 AM\u2013Noon"
+                            },
+                            {
+                                "renderedTime": "4:00 PM\u20139:00 PM"
+                            }
+                        ],
+                        "segments": []
+                    }
+                ]
+            },
+            "pageUpdates": {
+                "count": 0,
+                "items": []
+            },
+            "inbox": {
+                "count": 0,
+                "items": []
+            },
+            "venueChains": [],
+            "attributes": {
+                "groups": [
+                    {
+                        "type": "payments",
+                        "name": "Credit Cards",
+                        "summary": "Credit Cards",
+                        "count": 7,
+                        "items": [
+                            {
+                                "displayName": "Credit Cards",
+                                "displayValue": "Yes"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bestPhoto": {
+                "id": "51e9b8adccda6bac1f860692",
+                "createdAt": 1374271661,
+                "source": {
+                    "name": "Foursquare Web",
+                    "url": "https:\/\/foursquare.com"
+                },
+                "prefix": "https:\/\/igx.4sqi.net\/img\/general\/",
+                "suffix": "\/61294490_iS1oEUGRGfOWqXjvuOzo3qDR0IYqyhUXXDZMAP-GTQE.jpg",
+                "width": 2000,
+                "height": 945,
+                "visibility": "public"
+            }
+        }
+    }
+}
