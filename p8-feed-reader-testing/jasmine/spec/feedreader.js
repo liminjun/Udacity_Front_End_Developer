@@ -95,7 +95,7 @@ $(function () {
         });
 
         it('there is at least a single .entry element within the .feed container', function () {
-            var items = $('.feed').find('.entry');
+            var items = $('.feed .entry');
             expect(items.length).toBeGreaterThan(0);
         });
 
@@ -107,10 +107,11 @@ $(function () {
 
         beforeEach(function (done) {
 
-            loadFeed(1, (function () {
+            loadFeed(1, function () {
                 entries = $(".feed").html();
+                //console.log(entries);
                 done();
-            }));
+            });
 
 
 
@@ -118,6 +119,7 @@ $(function () {
 
         it('the content actually changes', function (done) {
             loadFeed(2, function () {
+                //console.log($(".feed").html());
                 expect($(".feed").html()).not.toEqual(entries);
                 done();
             });
