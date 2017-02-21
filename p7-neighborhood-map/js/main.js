@@ -12,7 +12,7 @@ var PlacesViewModel = function () {
   self.filterPlaces = ko.observableArray([]);//filter places
 
 
-  self.searchText = ko.observable('')
+  self.searchText = ko.observable("");
 
   self.getPlaces = function () {
     //locatin center
@@ -79,6 +79,8 @@ var PlacesViewModel = function () {
     }
   }
   self.Reset = function () {
+    self.searchText('');
+
     self.filterPlaces(self.places());
     //show all markers
     self.markers().forEach(function (place) {
