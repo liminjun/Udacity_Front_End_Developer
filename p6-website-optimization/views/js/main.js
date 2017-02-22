@@ -508,8 +508,9 @@ function updatePositions() {
   window.performance.mark("mark_start_frame");
 
   var items = document.querySelectorAll('.mover');
+  var scroll=document.body.scrollTop
   for (var i = 0; i < items.length; i++) {
-    var phase = Math.sin((document.body.scrollTop / 1250) + (i % 5));
+    var phase = Math.sin(( scroll/ 1250) + (i % 5));
     //items[i].style.left = items[i].basicLeft + 100 * phase + 'px';
     var left = -items[i].basicLeft + 100 * phase + 'px';
     items[i].style.transform = "translateX(" + left + ") translateZ(0)";
@@ -529,7 +530,6 @@ function updatePositions() {
 // window.addEventListener('scroll', updatePositions);
 //Using requestAnimationFrame more efficiency
 window.addEventListener('scroll', function () {
-  
   window.requestAnimationFrame(updatePositions);
 });
 
@@ -537,8 +537,8 @@ window.addEventListener('scroll', function () {
 document.addEventListener('DOMContentLoaded', function () {
   var cols = 8;
   var s = 256;
-  
-  for (var i = 0; i < 200; i++) {
+  //change 200 to 30,no need so many pizzas.
+  for (var i = 0; i < 30; i++) {
     var elem = document.createElement('img');
     elem.className = 'mover';
     elem.src = "images/pizza.png";
