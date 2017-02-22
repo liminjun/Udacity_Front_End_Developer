@@ -503,6 +503,7 @@ function logAverageFrame(times) {   // times is the array of User Timing measure
 
 // Moves the sliding background pizzas based on scroll position
 function updatePositions() {
+
   frame++;
   window.performance.mark("mark_start_frame");
 
@@ -510,8 +511,8 @@ function updatePositions() {
   for (var i = 0; i < items.length; i++) {
     var phase = Math.sin((document.body.scrollTop / 1250) + (i % 5));
     //items[i].style.left = items[i].basicLeft + 100 * phase + 'px';
-    var left = items[i].basicLeft + 100 * phase + 'px';
-    items[i].style.left = "translateX(" + left + ") translateZ(0)";
+    var left = -items[i].basicLeft + 100 * phase + 'px';
+    items[i].style.transform = "translateX(" + left + ") translateZ(0)";
   }
 
   // User Timing API to the rescue again. Seriously, it's worth learning.
@@ -528,6 +529,7 @@ function updatePositions() {
 // window.addEventListener('scroll', updatePositions);
 //Using requestAnimationFrame more efficiency
 window.addEventListener('scroll', function () {
+  
   window.requestAnimationFrame(updatePositions);
 });
 
@@ -539,9 +541,9 @@ document.addEventListener('DOMContentLoaded', function () {
   for (var i = 0; i < 30; i++) {
     var elem = document.createElement('img');
     elem.className = 'mover';
-    elem.src = "images/pizza.png";
-    // elem.style.height = "100px";
-    // elem.style.width = "73.333px";
+    elem.src = "images/pizza_small.png";
+    elem.style.height = "100px";
+    elem.style.width = "101px";
     //using image's default width and height. Don't resize the image in browser.
     elem.basicLeft = (i % cols) * s;
     elem.style.top = (Math.floor(i / cols) * s) + 'px';
