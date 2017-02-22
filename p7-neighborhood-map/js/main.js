@@ -1,4 +1,6 @@
+var foursquareAPIUrl = "https://api.foursquare.com/v2";
 
+var locationCenter = "37.76680465,-122.41403674111";
 
 var PlacesViewModel = function () {
   var self = this;
@@ -13,33 +15,27 @@ var PlacesViewModel = function () {
 
 
   self.searchText = ko.observable("");
+  self.errorMessage = ko.observable("");
 
   self.getPlaces = function () {
     //locatin center
-    var locationCenter = "37.76680465,-122.41403674111";
+
     $.ajax({
-      url: 'https://api.foursquare.com/v2/venues/search?ll=' + locationCenter +
+      url: foursquareAPIUrl + '/venues/search?ll=' + locationCenter +
       '&client_id=NONGGLXBKX5VFFIKKEK1HXQPFAFVMEBTRXBWJUPEN4K14JUE&client_secret=ZZDD1SLJ4PA2X4AJ4V23OOZ53UM4SFZX0KORGWP5TZDK4YYJ&v=20160101&limit=10',
-      dataType: "json",
-      success: function (result) {
+      dataType: "json"
+    })
+      .done(function (result) {
         if (result.meta.code == 200) {
           var resultData = result.response.venues;
           addMarker(resultData);
           self.filterPlaces(result.response.venues);
           self.places(resultData);
         }
-      },
-      error: function (e) {
-        document.getElementById("error").innerHTML = "<h4>Get data from Foursquare's API  failed.</h4>";
-      }
-    });
-  }
-
-
-
-
-
-
+      }).fail(function (e) {
+        self.errorMessage('Get data from Foursquare failed');
+      });
+  };
 
 
   self.placeClick = function (item) {
@@ -47,10 +43,20 @@ var PlacesViewModel = function () {
 
     self.markers().forEach(function (item) {
       if (currentMarkerId == item.id) {
+
+        if (item.marker.getAnimation()) {
+          item.marker.setAnimation(null);
+        } else {
+          item.marker.setAnimation(google.maps.Animation.BOUNCE);
+        }
+        setTimeout(function () {
+          item.marker.setAnimation(null);
+        }, 2000);
         showMarkerInfo(item.id, item.marker);
       }
     });
-  }
+  };
+
   //search place.
   self.Search = function () {
     var searchWord = self.searchText().toLowerCase();
@@ -77,7 +83,8 @@ var PlacesViewModel = function () {
       });
 
     }
-  }
+  };
+
   self.Reset = function () {
     self.searchText('');
 
@@ -86,7 +93,7 @@ var PlacesViewModel = function () {
     self.markers().forEach(function (place) {
       place.marker.setVisible(true);
     });
-  }
+  };
 
   function initMap() {
 
@@ -106,11 +113,11 @@ var PlacesViewModel = function () {
 
     infowindow = new google.maps.InfoWindow({ maxWidth: 300 });
     self.getPlaces();
-  };
+  }
 
   function showMarkerInfo(venueId, marker) {
     $.ajax({
-      url: 'https://api.foursquare.com/v2/venues/' + venueId +
+      url: foursquareAPIUrl + '/venues/' + venueId +
       '?client_id=NONGGLXBKX5VFFIKKEK1HXQPFAFVMEBTRXBWJUPEN4K14JUE&client_secret=ZZDD1SLJ4PA2X4AJ4V23OOZ53UM4SFZX0KORGWP5TZDK4YYJ&v=20160101&limit=10',
       dataType: "json",
       success: function (result) {
@@ -129,17 +136,17 @@ var PlacesViewModel = function () {
 
           var contentString = "<div style='width:220px;'><h3>" + venueData.name + "</h3><div><img src=" + venueFirstImage + "></div><div><p>" + venueDescription + "</p></div><div><a target='_blank' href=" + venueData.canonicalUrl + ">Link</a></div></div>";
 
-
+          marker.animation = google.maps.Animation.DROP;
           infowindow.setContent(contentString);
           map.setZoom(16);
           map.setCenter(marker.position);
           infowindow.open(map, marker);
-          map.panBy(0, -150);
+          //map.panBy(0, -150);
 
         }
       },
       error: function (e) {
-        document.getElementById("error").innerHTML = "<h4>Get data from Foursquare's API  failed.</h4>";
+        self.errorMessage('Get data from Foursquare failed');
       }
     });
   }
@@ -154,6 +161,7 @@ var PlacesViewModel = function () {
 
       var marker = new google.maps.Marker({
         position: new google.maps.LatLng(latitude, longitude),
+
         title: title,
         map: map
       });
@@ -166,12 +174,11 @@ var PlacesViewModel = function () {
       });
 
     });
-
-
   }
 
   initMap();
 
+};
+function initPage(){
+  ko.applyBindings(new PlacesViewModel());
 }
-
-ko.applyBindings(new PlacesViewModel());
