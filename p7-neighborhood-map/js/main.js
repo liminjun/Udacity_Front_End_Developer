@@ -14,8 +14,8 @@ var PlacesViewModel = function () {
   self.filterPlaces = ko.observableArray([]);//filter places
 
 
-  self.searchText = ko.observable("");
-  self.errorMessage = ko.observable("");
+  self.searchText = ko.observable('');
+  self.errorMessage = ko.observable('');
 
   self.getPlaces = function () {
     //locatin center
@@ -51,14 +51,14 @@ var PlacesViewModel = function () {
         }
         setTimeout(function () {
           item.marker.setAnimation(null);
-        }, 2000);
+        }, 1400);//one bounce is 700ms.
         showMarkerInfo(item.id, item.marker);
       }
     });
   };
 
   //search place.
-  self.Search = function () {
+  self.search = function () {
     var searchWord = self.searchText().toLowerCase();
 
     if (!searchWord) {
@@ -109,7 +109,7 @@ var PlacesViewModel = function () {
       panControl: false
     });
 
-    clearTimeout(self.googleMapLoadTimeout);
+
 
     infowindow = new google.maps.InfoWindow({ maxWidth: 300 });
     self.getPlaces();
@@ -138,11 +138,9 @@ var PlacesViewModel = function () {
 
           marker.animation = google.maps.Animation.DROP;
           infowindow.setContent(contentString);
-          map.setZoom(16);
-          map.setCenter(marker.position);
+          
+          //map.setCenter(marker.position);
           infowindow.open(map, marker);
-          //map.panBy(0, -150);
-
         }
       },
       error: function (e) {
@@ -161,7 +159,6 @@ var PlacesViewModel = function () {
 
       var marker = new google.maps.Marker({
         position: new google.maps.LatLng(latitude, longitude),
-
         title: title,
         map: map
       });
@@ -170,6 +167,11 @@ var PlacesViewModel = function () {
 
       marker.addListener("click", function () {
         var that = this;
+        that.setAnimation(google.maps.Animation.BOUNCE);
+
+        setTimeout(function () {
+          marker.setAnimation(null);
+        }, 1400);
         showMarkerInfo(venueId, that);
       });
 
@@ -179,6 +181,9 @@ var PlacesViewModel = function () {
   initMap();
 
 };
-function initPage(){
+function initPage() {
   ko.applyBindings(new PlacesViewModel());
+}
+function mapError() {
+  alert("Google Map loading failed,please try again.");
 }
