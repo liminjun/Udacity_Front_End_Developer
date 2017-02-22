@@ -537,13 +537,13 @@ window.addEventListener('scroll', function () {
 document.addEventListener('DOMContentLoaded', function () {
   var cols = 8;
   var s = 256;
-  //change 200 to 30.
-  for (var i = 0; i < 30; i++) {
+  
+  for (var i = 0; i < 200; i++) {
     var elem = document.createElement('img');
     elem.className = 'mover';
-    elem.src = "images/pizza_small.png";
+    elem.src = "images/pizza.png";
     elem.style.height = "100px";
-    elem.style.width = "101px";
+    elem.style.width = "73.333px";
     //using image's default width and height. Don't resize the image in browser.
     elem.basicLeft = (i % cols) * s;
     elem.style.top = (Math.floor(i / cols) * s) + 'px';
